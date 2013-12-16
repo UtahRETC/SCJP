@@ -18,5 +18,9 @@ public class MyCompare implements Comparable<MyCompare> {
 		list.add(b);
 		Collections.sort(list);
 		for(MyCompare c : list) { System.out.println(c.getName()); }
+		Set<MyCompare> t = new TreeSet<MyCompare>();
+		t.add(a);
+		t.add(b);
+		for(MyCompare c : t) { System.out.println(c.getName()); }
 	}	
 }
