@@ -1,3 +1,5 @@
+package com.paniclater.exceptional;
+
 import java.io.*;
 //The goal was to write code that could keep running after exceptions had been thrown and caught by taking advantage of a multithread environment
 public class MultiThreadException {

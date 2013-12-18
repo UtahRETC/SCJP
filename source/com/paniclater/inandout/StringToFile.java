@@ -1,3 +1,4 @@
+package com.paniclater.inandout;
 import java.io.*;
 
 public class StringToFile {

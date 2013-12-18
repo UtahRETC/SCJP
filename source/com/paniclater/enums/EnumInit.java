@@ -1,3 +1,5 @@
+package com.paniclater.enums;
+
 public class EnumInit {
 	public static void main(String[] args) {
 		System.out.println(Color.RED.toString() + " Main");

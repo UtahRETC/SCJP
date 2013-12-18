@@ -1,3 +1,4 @@
+package com.paniclater.initializing;
 //Important to remember the order
 //1. when the first reference occurs all the static init blocks of the superclasses of the class run, followed by their subclasses until the static init blocks of the referenced class are run
 //2. Upon instatiation first super is called up the chain to the top superclass(object)

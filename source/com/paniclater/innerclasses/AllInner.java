@@ -1,3 +1,4 @@
+package com.paniclater.innerclasses;
 
 //ok this is a leeeeetle bit screwy, but all the inner classes are here ( I think );
 public class AllInner {

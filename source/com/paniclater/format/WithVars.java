@@ -1,3 +1,5 @@
+package com.paniclater.format;
+
 public class WithVars {
 	public static void main(String[] args) {
 		long x = 123456789;

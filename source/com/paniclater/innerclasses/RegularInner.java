@@ -1,3 +1,4 @@
+package com.paniclater.innerclasses;
 public class RegularInner {
 	//Regular Inner classes can have all four access levels and all 3 modifiers
 	//They can be default, public, protected or private

@@ -1,3 +1,5 @@
+package com.paniclater.threads;
+
 public class RunSync {
 	public static void main(String[] args) {
 		//create an instance of a class that implements runnable

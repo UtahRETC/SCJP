@@ -1,3 +1,5 @@
+package com.paniclater.initializing;
+
 //here's the order of execution and why you can't pass an instance variable of either parent or child into the superconstructor
 //First, all the static variables are initialized and assigned values, 
 //so the first thing that happens it that s goes on the stack and a String object is created and assigned to the static reference s

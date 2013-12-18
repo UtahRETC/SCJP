@@ -1,3 +1,5 @@
+package com.paniclater.generics;
+
 import java.util.*;
 
 public class RentalGeneric<T> {

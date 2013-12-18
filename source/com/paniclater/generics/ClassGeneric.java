@@ -1,3 +1,4 @@
+package com.paniclater.generics;
 import java.util.*;
 public class ClassGeneric {
 	public static void main(String[] args) { 

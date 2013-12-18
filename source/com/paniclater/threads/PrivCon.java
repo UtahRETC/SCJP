@@ -1,3 +1,5 @@
+package com.paniclater.threads;
+
 class SafeDeposit {
 	private static SafeDeposit sd;
 	public static SafeDeposit getInstance() {
