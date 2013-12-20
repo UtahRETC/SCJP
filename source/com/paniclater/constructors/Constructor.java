@@ -25,7 +25,8 @@ class SuperSuperConstructor {
 	//the requisite type and number of arguments supplied
 	//otherwise you get a compiler error!
 	SuperSuperConstructor(int height) {
-
+		this(height, height);
 	}
+	SuperSuperConstructor(int height1, int height2) { }
 }
 
