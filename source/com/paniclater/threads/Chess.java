@@ -1,9 +1,12 @@
+package com.paniclater.threads;
+
 public class Chess implements Runnable {
 	public void run() {
 		//Chess implements runnable, so this is what will happen when a Thread starts with 
 		//a Chess object as an argument to the Thread constructor
 		
 		//move accepts the current Threads Id as an argument
+		for(int i = 0; i < 100; i++)
 		move(Thread.currentThread().getId());
 	}
 	//Insert code here
@@ -22,5 +25,6 @@ public class Chess implements Runnable {
 		//I postulate that it doesn't matter that move is synchronized in this case as both Chess objects will have their own locks.
 		//if new thread() was passed the same ch instance both times, then synchronization would come into play.
 		new Thread(new Chess()).start();
+		System.out.println("\n");
 	}
 }
