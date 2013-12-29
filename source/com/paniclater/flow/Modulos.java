@@ -16,6 +16,7 @@ public class Modulos {
 			if(i % 2 == 0 && x % 2 == 1) System.out.print("-");
 			if(i == 2 ^ x == 4) System.out.print(",");
 		}
+		System.out.println(x);
 		System.out.println("<");
 	}
 }
