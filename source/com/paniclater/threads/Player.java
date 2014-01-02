@@ -49,19 +49,18 @@ public class Player implements Runnable {
 				turn.start();
 				for(Player p : players) {
 					try {
-						p.getTurn().wait();
-					} catch (IllegalMonitorStateException isme) {
-						System.out.println("I don't own this lock");
-					}	
+						p.getTurn().notify();
+					} catch (IllegalMonitorStateException imse) {
+						System.out.println(imse);
+					}
 				}
 			} else {	
 				try {
+					System.out.println(turn.getId() + " is waiting");
 					turn.wait();
-					System.out.println("Waiting");
 				} catch (InterruptedException ie) {
 					System.out.println(ie);
 				}
-				//notify();
 			}
 		}
 	}
