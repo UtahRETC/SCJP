@@ -7,6 +7,8 @@ public class Fabric extends Thread {
 		t.start();
 		t2.start();
 	}
+
+	//will not compile if it is static void run() {
 	public void run() {
 		for(int i = 0; i < 2; i ++)
 			System.out.print(Thread.currentThread().getName() + " ");
