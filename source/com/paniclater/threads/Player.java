@@ -47,16 +47,20 @@ public class Player implements Runnable {
 		synchronized(turn) {
 			if(go) {
 				turn.start();
-				//for(Player p : players) {
-					//p.getTurn().notify();
-				//}
+				for(Player p : players) {
+					try {
+						p.getTurn().wait();
+					} catch (IllegalMonitorStateException isme) {
+						System.out.println("I don't own this lock");
+					}	
+				}
 			} else {	
-				//try {
-				//	System.out.println("Waiting");
-				//	turn.wait();
-				//} catch (InterruptedException ie) {
-				//	System.out.println(ie);
-				//}
+				try {
+					turn.wait();
+					System.out.println("Waiting");
+				} catch (InterruptedException ie) {
+					System.out.println(ie);
+				}
 				//notify();
 			}
 		}
